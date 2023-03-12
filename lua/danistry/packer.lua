@@ -32,11 +32,16 @@ use {
     {'rafamadriz/friendly-snippets'}, -- Optional
   }
 }
-
-		use {
+use {
  		 'nvim-lualine/lualine.nvim',
  			requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
-
-
-end)
+		use {'onsails/lspkind-nvim'}
+    use 'windwp/nvim-autopairs'
+    use 'windwp/nvim-ts-autotag'
+		use 'kyazdani42/nvim-web-devicons' -- File icons
+		-- Agregar el paquete telescope-fzy-native.nvim
+		use 'nvim-telescope/telescope-fzy-native.nvim'
+		-- using packer.nvim
+use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}	
+	end)
