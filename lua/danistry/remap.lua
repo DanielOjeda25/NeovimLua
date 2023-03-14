@@ -17,6 +17,11 @@ vim.keymap.set('', 'sh', '<C-w>h')
 vim.keymap.set('', 'sk', '<C-w>k')
 vim.keymap.set('', 'sj', '<C-w>j')
 vim.keymap.set('', 'sl', '<C-w>l')
+-- Cerrar pestañas con <C-w>
+vim.api.nvim_set_keymap('n', '<C-w>', ':BufferLineCloseRight<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Tab>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+
 
 
 	-- Resize window

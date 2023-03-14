@@ -1,7 +1,11 @@
 require("bufferline").setup{
   options = {
+		--Abre archivos en una nueva pestaña
+    always_show_bufferline = true,
+    view = "multiwindow",
+		separator_style = "round",
     hover = {
-        enabled = true,
+       enabled = true,
         delay = 200,
         reveal = {'close'}
     },
@@ -11,4 +15,5 @@ require("bufferline").setup{
     end
 	},
 }
+--
 
