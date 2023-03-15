@@ -1,5 +1,6 @@
-let name = "daniel"
-if (name) {
+
+let nombre "daniel"
+if (nombre) {
 	console.log("el nombre es daniel")
 }
 

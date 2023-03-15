@@ -44,4 +44,5 @@ use {
 		use 'nvim-telescope/telescope-fzy-native.nvim'
 		-- using packer.nvim
 use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}	
-	end)
+
+end)
