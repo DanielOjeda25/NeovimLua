@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
     "nvim-telescope/telescope.nvim",
     tag = "0.1.0",
     requires = { { "nvim-lua/plenary.nvim" } },
-  })
+})
 use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 use {
   'VonHeikemen/lsp-zero.nvim',
@@ -44,5 +44,8 @@ use {
 		use 'nvim-telescope/telescope-fzy-native.nvim'
 		-- using packer.nvim
 use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}	
-
+	use 'prettier/vim-prettier'
+	use "lukas-reineke/indent-blankline.nvim"
+ use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}
 end)
+

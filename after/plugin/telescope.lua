@@ -12,6 +12,7 @@ vim.api.nvim_set_keymap('n', '<C-p>', '<cmd>Telescope find_files<cr>', { noremap
 -- Configurar Telescope y telescope-fzy-native
 telescope.setup({
   defaults = {
+		 file_ignore_patterns = {'node_modules'},
     -- Ubicación donde aparecerán los resultados
     layout_config = {
       horizontal = {

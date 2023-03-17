@@ -22,14 +22,19 @@ vim.keymap.set('', 'sl', '<C-w>l')
 vim.api.nvim_set_keymap('n', '<Tab>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
 
+--prettier configs
+vim.g.mapleader = " "
 
+vim.api.nvim_set_keymap('n', '<leader>p', ':PrettierAsync<CR>', { noremap = true, silent = true })
 
 	-- Resize window
 --vim.keymap.set('n', '<C-w><left>', '<C-w><')
 --vim.keymap.set('n', '<C-w><right>', '<C-w>>')
 --vim.keymap.set('n', '<C-w><up>', '<C-w>+')
 --vim.keymap.set('n', '<C-w><down>', '<C-w>-')
-
-
+-- Mapeo de teclas
+-- Establecer <Space> como <Leader>
+vim.g.mapleader = ' '
+vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 

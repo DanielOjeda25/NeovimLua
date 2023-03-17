@@ -1,8 +1,7 @@
+let nombre = 'daniel'
 
-let nombre "daniel"
 if (nombre) {
-	console.log("el nombre es daniel")
+	console.log('el nombre es daniel')
 }
 
-
-console.log("")
+console.log('')
