@@ -1,7 +1,7 @@
 -- Set Prettier options
 vim.g.prettier_quickfix_enabled = 0
 vim.api.nvim_exec([[
-  autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
+  autocmd InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
 ]], true)
 vim.g.prettier_config_print_width = 'auto'
 vim.g.prettier_config_tab_width = 2

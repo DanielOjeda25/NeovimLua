@@ -44,4 +44,5 @@ vim.api.nvim_set_keymap('n', '<Leader>dp', '<Plug>(ale_previous)', { noremap = t
 vim.api.nvim_set_keymap('n', '<Leader>df', '<Plug>(ale_lint)', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>dx', '<Plug>(ale_fix)', { noremap = true })
 
+vim.g.ale_javascript_eslint_executable = '/usr/bin/eslint'
 
