@@ -47,5 +47,18 @@ use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-dev
 	use 'prettier/vim-prettier'
 	use "lukas-reineke/indent-blankline.nvim"
  use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}
+
+
+ --Ale
+ use {
+  'dense-analysis/ale'
+}
+--coc
+use {
+  'neoclide/coc.nvim',
+  branch = 'release',
+}
+
+
 end)
 

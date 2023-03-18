@@ -1,7 +1,5 @@
-let nombre = 'daniel'
-
-if (nombre) {
-	console.log('el nombre es daniel')
+const miNumbre = () => {
+	console.log('hola')
 }
 
-console.log('')
+miNumbre()
