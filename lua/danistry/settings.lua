@@ -1,8 +1,5 @@
 --configs personales
 vim.g.mapleader = " "
-vim.opt.backup = false
-vim.opt.errorbells = false
-vim.opt.swapfile = false
 vim.opt.signcolumn = 'yes'
 vim.cmd("autocmd!")
 
@@ -32,3 +29,20 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
+
+-- Eliminar espacios en blanco al final del archivo al guardar
+vim.api.nvim_exec([[
+  augroup trim_spaces
+    autocmd!
+    autocmd BufWritePre * %s/\s\+$//e
+  augroup END
+]], false)
+
+-- Desactivar las alertas de plugins o configuraciones faltantes
+vim.o.errorbells = false
+vim.o.visualbell = false
+vim.o.swapfile = false
+vim.o.backup = false
+vim.o.writebackup = false
+
+

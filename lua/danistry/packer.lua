@@ -60,7 +60,7 @@ return require('packer').startup(function(use)
  -- }
  -- -- En tu archivo de configuración de Packer
 	use 'ayu-theme/ayu-vim'
-	use {'glepnir/lspsaga.nvim'}
+	use 'voldikss/vim-floaterm'
 
 end)
 

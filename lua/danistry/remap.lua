@@ -45,4 +45,7 @@ vim.api.nvim_set_keymap('n', '<Leader>df', '<Plug>(ale_lint)', { noremap = true 
 vim.api.nvim_set_keymap('n', '<Leader>dx', '<Plug>(ale_fix)', { noremap = true })
 
 vim.g.ale_javascript_eslint_executable = '/usr/bin/eslint'
+-- Atajos de teclado
+vim.api.nvim_set_keymap('n', '<leader>t', ':FloatermToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<C-t>', '<C-\\><C-n>:FloatermToggle<CR>', { noremap = true, silent = true })
 
